@@ -1,8 +1,0 @@
-76c0c4,::1,GET,https://localhost:8000/,1672908705,,404
-fecfce,::1,GET,https://localhost:8000/admin,1672908711,,200
-868d42,::1,GET,https://localhost:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CCategoryCrudController,1672908725,,200
-7cb773,::1,GET,https://localhost:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CProductCrudController,1672908726,,200
-c6825c,::1,GET,https://localhost:8000/admin?crudAction=detail&crudControllerFqcn=App%5CController%5CAdmin%5CCategoryCrudController&entityId=2&referrer=%2Fadmin%3FcrudAction%3Dindex%26crudControllerFqcn%3DApp%255CController%255CAdmin%255CProductCrudController,1672908753,,200
-a317a7,::1,GET,https://localhost:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CCategoryCrudController,1672908876,,200
-c2541c,::1,GET,https://localhost:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CProductCrudController,1672908882,,200
-7f298f,::1,GET,https://localhost:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CCategoryCrudController,1672908883,,200
