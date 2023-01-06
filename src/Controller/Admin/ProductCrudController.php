@@ -7,6 +7,7 @@ use App\Form\ProductImageType;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\CollectionField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\Field;
 use EasyCorp\Bundle\EasyAdminBundle\Field\FormField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
@@ -30,5 +31,6 @@ class ProductCrudController extends AbstractCrudController
         yield FormField::addTab('Images');
         yield CollectionField::new('productImages')
                 ->setEntryType(ProductImageType::class);
+        yield DateTimeField::new('updatedAt')->setDisabled(true);
     }
 }

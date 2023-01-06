@@ -2,25 +2,26 @@
 
 namespace App\Controller\Admin;
 
-use App\Entity\Category;
+use App\Entity\User;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
-use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\Field;
-use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 
-class CategoryCrudController extends AbstractCrudController
+class UserCrudController extends AbstractCrudController
 {
     public static function getEntityFqcn(): string
     {
-        return Category::class;
+        return User::class;
     }
 
+    
     public function configureFields(string $pageName): iterable
     {
-        yield Field::new('title');
-        yield AssociationField::new('parent')->setRequired(false);
-        yield TextEditorField::new('description')->hideOnIndex();
+        yield Field::new('email');
+        yield Field::new('firstname');
+        yield Field::new('plainPassword')
+            -> setHelp('Laissez vide pour ne rien changer')
+            -> onlyOnForms();
         yield DateTimeField::new('updatedAt')->setDisabled(true);
     }
 }
