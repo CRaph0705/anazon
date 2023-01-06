@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Catégorie
+	{{category.title}}
+{% endblock %}
+
+{% block body %}
+
+
+	<div class="example-wrapper">
+		<h1>Catégorie
+			{{category.title}}
+		</h1>
+            {% for product in category.products %}
+                {{product.name}}
+                {{product.price | format_currency('EUR')}}
+            {% else %}
+                Aucun produit dans la catégorie {{ category.title }}
+            {% endfor %}
+	{% endblock %}

@@ -19,11 +19,11 @@ class HelloController extends AbstractController
             'category' => [
                 'title' => 'Sample' .$name,
             ],
+            'example' => 1
         ]);
-
         // return new JsonResponse([
         //     'category' => [
-        //         'title' -> 'Sample' .$name,
+        //         'title' => 'Sample ' .$name,
         //     ],
         // ]);
     }
